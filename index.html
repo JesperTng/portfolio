@@ -4,226 +4,155 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Jesper Tng - Product Manager for Digital Transformation">
-    <title>Jesper Tng | Product Manager</title>
+    <title>Jesper Tng</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <a href="#home" class="logo">JT</a>
-            <button class="nav-toggle" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#experience" class="nav-link">Experience</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">Jesper Tng</a>
+            <div class="nav-links">
+                <a href="#work" class="nav-link">Work</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <p class="hero-greeting">Hello, I'm</p>
-                <h1 class="hero-title">Jesper Tng</h1>
-                <p class="hero-subtitle">Product Manager for Digital Transformation</p>
-                <p class="hero-description">
-                    Driving innovation and transforming businesses through strategic product management
-                    and digital solutions.
-                </p>
-                <div class="hero-cta">
-                    <a href="#contact" class="btn btn-primary">Get in Touch</a>
-                    <a href="#experience" class="btn btn-secondary">View My Work</a>
-                </div>
-            </div>
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-label">Product Manager</div>
+            <h1 class="hero-title">
+                Transforming businesses<br>
+                through digital innovation
+            </h1>
+            <p class="hero-text">
+                I help organizations navigate digital transformation by bridging the gap between
+                business strategy and technology execution.
+            </p>
         </div>
-        <div class="scroll-indicator">
-            <span>Scroll Down</span>
-            <div class="scroll-arrow"></div>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work" class="work">
+        <div class="work-container">
+            <div class="section-header">
+                <h2 class="section-title">Selected Work</h2>
+                <p class="section-subtitle">Projects that drive digital transformation</p>
+            </div>
+
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-number">01</div>
+                    <h3 class="project-title">Enterprise Digital Transformation</h3>
+                    <p class="project-description">
+                        Led end-to-end digital transformation for Fortune 500 company,
+                        modernizing legacy systems and implementing cloud solutions.
+                    </p>
+                    <div class="project-meta">
+                        <span class="project-tag">Strategy</span>
+                        <span class="project-tag">Cloud</span>
+                        <span class="project-tag">Enterprise</span>
+                    </div>
+                    <div class="project-impact">40% efficiency improvement • $2M+ annual savings</div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-number">02</div>
+                    <h3 class="project-title">Customer Portal Platform</h3>
+                    <p class="project-description">
+                        Developed customer-facing digital platform serving 100,000+ active users,
+                        increasing engagement by 65%.
+                    </p>
+                    <div class="project-meta">
+                        <span class="project-tag">Product</span>
+                        <span class="project-tag">SaaS</span>
+                        <span class="project-tag">UX</span>
+                    </div>
+                    <div class="project-impact">100K+ users • 65% engagement increase</div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-number">03</div>
+                    <h3 class="project-title">AI Analytics Platform</h3>
+                    <p class="project-description">
+                        Spearheaded development of AI-driven analytics platform providing
+                        real-time insights and predictive capabilities.
+                    </p>
+                    <div class="project-meta">
+                        <span class="project-tag">AI/ML</span>
+                        <span class="project-tag">Analytics</span>
+                        <span class="project-tag">Innovation</span>
+                    </div>
+                    <div class="project-impact">50% faster decision-making • Real-time insights</div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-number">04</div>
+                    <h3 class="project-title">Process Automation Suite</h3>
+                    <p class="project-description">
+                        Designed automated workflow solutions streamlining business processes
+                        and reducing manual tasks.
+                    </p>
+                    <div class="project-meta">
+                        <span class="project-tag">Automation</span>
+                        <span class="project-tag">RPA</span>
+                        <span class="project-tag">Process</span>
+                    </div>
+                    <div class="project-impact">70% reduction in manual tasks</div>
+                </article>
+            </div>
         </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
+        <div class="about-container">
+            <div class="section-header">
+                <h2 class="section-title">About</h2>
+            </div>
+
             <div class="about-content">
-                <div class="about-text">
-                    <p class="lead">
-                        I'm a passionate Product Manager specializing in digital transformation,
-                        helping organizations navigate the complexities of modern technology and
-                        deliver exceptional digital experiences.
+                <div class="about-main">
+                    <p class="about-text-large">
+                        I'm a Product Manager specializing in digital transformation,
+                        with a focus on bridging the gap between business objectives
+                        and technical execution.
                     </p>
-                    <p>
-                        With a strategic mindset and deep understanding of both business and technology,
-                        I bridge the gap between stakeholders, development teams, and end users to create
-                        products that drive real value and measurable impact.
-                    </p>
-                    <p>
-                        My approach combines data-driven decision making, user-centered design principles,
-                        and agile methodologies to deliver solutions that not only meet business objectives
-                        but also delight users and adapt to changing market needs.
+                    <p class="about-text">
+                        My approach combines strategic thinking with hands-on product management,
+                        helping organizations leverage technology to solve complex business challenges.
+                        I believe in data-driven decision making, user-centered design, and agile
+                        methodologies that deliver measurable impact.
                     </p>
                 </div>
-                <div class="about-highlights">
-                    <div class="highlight-card">
-                        <div class="highlight-icon">🎯</div>
-                        <h3>Strategic Vision</h3>
-                        <p>Aligning product strategy with business goals and market opportunities</p>
-                    </div>
-                    <div class="highlight-card">
-                        <div class="highlight-icon">💡</div>
-                        <h3>Innovation Focus</h3>
-                        <p>Driving digital transformation through cutting-edge solutions</p>
-                    </div>
-                    <div class="highlight-card">
-                        <div class="highlight-icon">🤝</div>
-                        <h3>Collaboration</h3>
-                        <p>Building strong cross-functional teams and stakeholder relationships</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="experience">
-        <div class="container">
-            <h2 class="section-title">Experience & Projects</h2>
-            <div class="experience-grid">
-                <div class="experience-card">
-                    <div class="card-header">
-                        <h3>Digital Transformation Initiative</h3>
-                        <span class="card-tag">Enterprise</span>
+                <div class="about-grid">
+                    <div class="about-item">
+                        <h3 class="about-item-title">Expertise</h3>
+                        <ul class="about-list">
+                            <li>Product Strategy & Roadmap Planning</li>
+                            <li>Digital Transformation & Change Management</li>
+                            <li>Agile/Scrum Methodologies</li>
+                            <li>Stakeholder Management</li>
+                            <li>Data Analytics & Business Intelligence</li>
+                        </ul>
                     </div>
-                    <p class="card-description">
-                        Led end-to-end digital transformation project for a Fortune 500 company,
-                        modernizing legacy systems and implementing cloud-based solutions that
-                        improved operational efficiency by 40%.
-                    </p>
-                    <ul class="card-highlights">
-                        <li>Stakeholder management across 5 departments</li>
-                        <li>$2M+ annual cost savings achieved</li>
-                        <li>Agile transformation and process optimization</li>
-                    </ul>
-                </div>
 
-                <div class="experience-card">
-                    <div class="card-header">
-                        <h3>Customer Portal Platform</h3>
-                        <span class="card-tag">SaaS</span>
-                    </div>
-                    <p class="card-description">
-                        Developed and launched a customer-facing digital platform that enhanced
-                        user experience and increased customer engagement by 65%, serving over
-                        100,000 active users.
-                    </p>
-                    <ul class="card-highlights">
-                        <li>User research and persona development</li>
-                        <li>A/B testing and data analytics implementation</li>
-                        <li>Mobile-first responsive design</li>
-                    </ul>
-                </div>
-
-                <div class="experience-card">
-                    <div class="card-header">
-                        <h3>AI-Powered Analytics Tool</h3>
-                        <span class="card-tag">Innovation</span>
-                    </div>
-                    <p class="card-description">
-                        Spearheaded the development of an AI-driven analytics platform that
-                        provides real-time insights and predictive capabilities, reducing
-                        decision-making time by 50%.
-                    </p>
-                    <ul class="card-highlights">
-                        <li>Machine learning integration</li>
-                        <li>Real-time data visualization</li>
-                        <li>Cross-platform compatibility</li>
-                    </ul>
-                </div>
-
-                <div class="experience-card">
-                    <div class="card-header">
-                        <h3>Process Automation Suite</h3>
-                        <span class="card-tag">Automation</span>
-                    </div>
-                    <p class="card-description">
-                        Designed and implemented automated workflow solutions that streamlined
-                        business processes, reducing manual tasks by 70% and increasing team
-                        productivity.
-                    </p>
-                    <ul class="card-highlights">
-                        <li>RPA and workflow automation</li>
-                        <li>Integration with existing systems</li>
-                        <li>Change management and training</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="section-title">Skills & Expertise</h2>
-            <div class="skills-content">
-                <div class="skills-category">
-                    <h3>Product Management</h3>
-                    <div class="skills-list">
-                        <span class="skill-tag">Product Strategy</span>
-                        <span class="skill-tag">Roadmap Planning</span>
-                        <span class="skill-tag">User Research</span>
-                        <span class="skill-tag">Market Analysis</span>
-                        <span class="skill-tag">Competitive Analysis</span>
-                        <span class="skill-tag">Product Lifecycle</span>
-                    </div>
-                </div>
-
-                <div class="skills-category">
-                    <h3>Digital Transformation</h3>
-                    <div class="skills-list">
-                        <span class="skill-tag">Cloud Migration</span>
-                        <span class="skill-tag">Digital Strategy</span>
-                        <span class="skill-tag">Change Management</span>
-                        <span class="skill-tag">Business Process Optimization</span>
-                        <span class="skill-tag">Legacy System Modernization</span>
-                        <span class="skill-tag">ROI Analysis</span>
-                    </div>
-                </div>
-
-                <div class="skills-category">
-                    <h3>Methodologies & Tools</h3>
-                    <div class="skills-list">
-                        <span class="skill-tag">Agile/Scrum</span>
-                        <span class="skill-tag">Lean Startup</span>
-                        <span class="skill-tag">Design Thinking</span>
-                        <span class="skill-tag">JIRA</span>
-                        <span class="skill-tag">Confluence</span>
-                        <span class="skill-tag">Figma</span>
-                        <span class="skill-tag">Google Analytics</span>
-                        <span class="skill-tag">SQL</span>
-                    </div>
-                </div>
-
-                <div class="skills-category">
-                    <h3>Leadership & Communication</h3>
-                    <div class="skills-list">
-                        <span class="skill-tag">Stakeholder Management</span>
-                        <span class="skill-tag">Team Leadership</span>
-                        <span class="skill-tag">Presentation Skills</span>
-                        <span class="skill-tag">Cross-functional Collaboration</span>
-                        <span class="skill-tag">Negotiation</span>
-                        <span class="skill-tag">Strategic Planning</span>
+                    <div class="about-item">
+                        <h3 class="about-item-title">Tools</h3>
+                        <ul class="about-list">
+                            <li>JIRA, Confluence, Figma</li>
+                            <li>Google Analytics, SQL</li>
+                            <li>Cloud Platforms (AWS, Azure)</li>
+                            <li>Design Thinking Frameworks</li>
+                            <li>Lean Startup Methodologies</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -232,41 +161,34 @@
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Let's Connect</h2>
-            <div class="contact-content">
-                <p class="contact-intro">
-                    I'm always interested in hearing about new opportunities, collaborations,
-                    or just having a conversation about digital transformation and product management.
-                </p>
-                <div class="contact-methods">
-                    <a href="mailto:jesper.tng@email.com" class="contact-card">
-                        <div class="contact-icon">📧</div>
-                        <h3>Email</h3>
-                        <p>jesper.tng@email.com</p>
-                    </a>
-                    <a href="https://linkedin.com/in/jespertng" target="_blank" rel="noopener noreferrer" class="contact-card">
-                        <div class="contact-icon">💼</div>
-                        <h3>LinkedIn</h3>
-                        <p>Connect with me</p>
-                    </a>
-                    <a href="https://twitter.com/jespertng" target="_blank" rel="noopener noreferrer" class="contact-card">
-                        <div class="contact-icon">🐦</div>
-                        <h3>Twitter</h3>
-                        <p>Follow my insights</p>
-                    </a>
-                </div>
+        <div class="contact-container">
+            <h2 class="contact-title">Let's work together</h2>
+            <p class="contact-text">
+                I'm always interested in hearing about new opportunities and collaborations.
+            </p>
+
+            <div class="contact-links">
+                <a href="mailto:jesper.tng@email.com" class="contact-link">
+                    <span class="contact-link-label">Email</span>
+                    <span class="contact-link-value">jesper.tng@email.com</span>
+                </a>
+                <a href="https://linkedin.com/in/jespertng" target="_blank" rel="noopener noreferrer" class="contact-link">
+                    <span class="contact-link-label">LinkedIn</span>
+                    <span class="contact-link-value">@jespertng</span>
+                </a>
+                <a href="https://twitter.com/jespertng" target="_blank" rel="noopener noreferrer" class="contact-link">
+                    <span class="contact-link-label">Twitter</span>
+                    <span class="contact-link-value">@jespertng</span>
+                </a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 Jesper Tng. All rights reserved.</p>
-            <div class="footer-links">
-                <a href="#home">Back to Top</a>
-            </div>
+        <div class="footer-container">
+            <p class="footer-text">&copy; 2024 Jesper Tng</p>
+            <a href="#" class="footer-link">Back to top ↑</a>
         </div>
     </footer>
 
