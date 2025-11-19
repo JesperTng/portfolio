@@ -140,6 +140,8 @@ a {
     padding: 3rem 2rem;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 3rem;
     position: relative;
     z-index: 1;
