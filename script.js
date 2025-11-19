@@ -5,61 +5,28 @@
 'use strict';
 
 // ========================================
-// Smooth Scrolling
-// ========================================
-
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        const href = this.getAttribute('href');
-
-        // Skip if href is just "#"
-        if (href === '#') {
-            e.preventDefault();
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-            return;
-        }
-
-        const target = document.querySelector(href);
-        if (target) {
-            e.preventDefault();
-            const offsetTop = target.offsetTop - 80;
-            window.scrollTo({
-                top: offsetTop,
-                behavior: 'smooth'
-            });
-        }
-    });
-});
-
-// ========================================
-// Navigation Active State
+// Navigation Active State (Multi-page)
 // ========================================
 
 function updateActiveNav() {
-    const sections = document.querySelectorAll('section[id]');
-    const scrollPosition = window.scrollY + 150;
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    const navLinks = document.querySelectorAll('.nav-link');
 
-    sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.offsetHeight;
-        const sectionId = section.getAttribute('id');
-        const navLink = document.querySelector(`.nav-link[href="#${sectionId}"]`);
+    navLinks.forEach(link => {
+        const linkHref = link.getAttribute('href');
 
-        if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
-            document.querySelectorAll('.nav-link').forEach(link => {
-                link.style.color = '';
-            });
-            if (navLink) {
-                navLink.style.color = 'var(--color-text)';
-            }
+        // Remove active class from all links
+        link.classList.remove('active');
+
+        // Add active class to current page link
+        if (linkHref === currentPage ||
+            (currentPage === '' && linkHref === 'index.html') ||
+            (currentPage === 'index.html' && linkHref === 'index.html')) {
+            link.classList.add('active');
         }
     });
 }
 
-window.addEventListener('scroll', updateActiveNav);
 window.addEventListener('load', updateActiveNav);
 
 // ========================================
@@ -82,7 +49,7 @@ const observer = new IntersectionObserver((entries) => {
 
 // Observe elements for fade-in animation
 document.addEventListener('DOMContentLoaded', () => {
-    const elementsToAnimate = document.querySelectorAll('.project-card, .about-item');
+    const elementsToAnimate = document.querySelectorAll('.project-card, .case-study-card, .about-item');
     elementsToAnimate.forEach(el => observer.observe(el));
 });
 
