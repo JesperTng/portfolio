@@ -143,16 +143,30 @@ a {
 }
 
 .nav-logo {
-    font-size: 1.25rem;
-    font-weight: 800;
-    letter-spacing: -0.02em;
-    color: var(--color-primary);
-    text-shadow: var(--glow-sm);
+    display: flex;
+    align-items: center;
     transition: var(--transition-fast);
 }
 
-.nav-logo:hover {
-    text-shadow: var(--glow-md);
+.logo-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    font-size: 1.125rem;
+    font-weight: 900;
+    letter-spacing: -0.05em;
+    color: var(--color-bg-dark);
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+    border-radius: 10px;
+    box-shadow: var(--glow-sm);
+    transition: var(--transition-fast);
+}
+
+.nav-logo:hover .logo-icon {
+    box-shadow: var(--glow-md);
+    transform: scale(1.05);
 }
 
 .nav-links {
